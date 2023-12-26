@@ -1,9 +1,27 @@
-a=int(input("1: "))
+def main():
 
-b=int(input("1: "))
+   start = int(input("Начало: "))
 
-for i in range(a,b+1):
+   end = int(input("Конец: "))
 
-  if i%7==0:
+   for i in range(start, end + 1):
 
-      print(i)
+       if i % 3 == 0 and i % 5 == 0:
+
+           print("Fizz Buzz")
+
+       elif i % 3 == 0:
+
+           print("Fizz")
+
+       elif i % 5 == 0:
+
+           print("Buzz")
+
+       else:
+
+           print(i)
+
+if __name__ == "__main__":
+
+   main()
