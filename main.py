@@ -1,8 +1,5 @@
-n = int(input("a:"))
-factorial = 1
+length = int(input("Длина"))
+symbol = input("Символ")
+for i in range(length):
+    print(symbol,end="")
 
-while n > 1:
-    factorial = factorial * n
-    n = n - 1
-
-print(factorial)
