@@ -1,6 +1,6 @@
-a=int(input("Первое число: "))
+a=int(input("1: "))
 
-b=int(input("Второе число: "))
+b=int(input("1: "))
 
 for i in range(a,b+1):
 
