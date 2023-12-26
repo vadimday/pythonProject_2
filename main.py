@@ -1,9 +1,48 @@
-a=int(input("1: "))
+def main():
+   print("Начало Конец")
 
-b=int(input("1: "))
+   start = int(input("Начало: "))
 
-for i in range(a,b+1):
+   end = int(input("Конец: "))
 
-  if i%7==0:
+   print("Все:")
 
-      print(i)
+   for i in range(start, end + 1):
+
+       print(i, end=" ")
+
+   print()
+
+   print("Упад:")
+
+   for i in range(end, start - 1, -1):
+
+       print(i, end=" ")
+
+   print()
+
+   print("Кратные 7:")
+
+   for i in range(start, end + 1):
+
+       if i % 7 == 0:
+
+           print(i, end=" ")
+
+   print()
+
+   print("Кратные 5:")
+
+   count = 0
+
+   for i in range(start, end + 1):
+
+       if i % 5 == 0:
+
+           count += 1
+
+   print(count)
+
+if __name__ == "__main__":
+
+   main()
